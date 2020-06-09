@@ -1,0 +1,246 @@
+
+@import url('https://use.fontawesome.com/releases/v5.4.1/css/all.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Slab:wght@200&display=swap');
+
+body{
+  text-align: center;
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+  header, main, footer, .nav, .container, .seccionDos,  .secionTres, a{
+    overflow: hidden;
+}
+.flotar, .nav li, .secionTres div, .seccionDosLogos img , .seccionDosLogos i{
+  float: left;
+}
+
+
+/* WARNING: HOME */
+
+
+h1{
+
+  font-family: 'Roboto Slab', serif;
+  width:90%;
+}
+.nav{
+  width: 50%;
+  margin: auto;
+}
+
+.icono{
+  font-size: 30px;
+  margin: 20px;
+}
+.nav li{
+  width: 29%;
+  padding: 2%;
+  list-style: none;
+
+}
+
+a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-family: 'Roboto Slab', serif;
+  transition: 0.3s;
+}
+
+main{
+  width: 70%;
+  margin: auto;
+}
+.nav a:hover{
+  color: #888888;
+}
+.grande{
+  width: 65%;
+  /* background-color: rgb(18, 186, 196); */
+  margin: 3px;
+  height: 50vh;
+}
+
+
+
+.peque{
+  /* background-color: rgb(18, 186, 196); */
+  margin: 1px;
+  width: 32%;
+  height: 50vh;
+}
+
+.peque div{
+  height: 24vh;
+  margin: 5px;
+  /* background-color: rgb(5, 26, 139); */
+}
+
+
+img{
+  width: 100%;
+  height: 100%;
+}
+
+.logo{
+  width: 5%;
+  margin: 1%;
+}
+
+/* WARNING: FORM */
+
+
+.faq-header{
+  font-size: 42px;
+  border-bottom: 1px dotted #ccc;
+  padding: 24px;
+}
+
+.faq-content {
+  margin: 0 auto;
+}
+ .linea {
+  border-bottom: 1px dotted #ccc;
+}
+.faq-question {
+  padding: 20px 0;
+  border-bottom: 1px dotted #ccc;
+}
+.faq-question label{
+  font-weight: bold;
+}
+
+.arriba{
+  margin-top: 30px;
+}
+.panel-title {
+  font-size: 20px;
+  width: 96%;
+  position: relative;
+  margin: 0;
+  padding: 10px 10px 0 48px;
+  display: block;
+  cursor: pointer;
+}
+
+.panel-content {
+  font-size: 20px;
+  padding: 0px 14px;
+  margin: 0 40px;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.panel-content p{
+  text-align: justify;
+}
+
+.panel:checked ~ .panel-content{
+  height: auto;
+  opacity: 1;
+  padding: 14px;
+}
+
+.plus {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 4px;
+  z-index: 5;
+  font-size: 30px;
+  line-height: 117%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.panel:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.panel {
+  display: none;
+}
+
+/* WARNING: FOOTER */
+
+footer{
+  color: white;
+  background-color: #161619;
+  margin-top: 30px;
+}
+
+
+/* WARNING: SECCIÓN 2 */
+
+.seccionDos div{
+  width: 31%;
+  margin: 9px;
+  height: 400px;
+  float: left;
+  /* border-radius: 10px; */
+}
+
+.seccionDosLogos .flotar{
+  width: 48%;
+  margin: 1%;
+  text-align: justify;
+}
+
+.seccionDosLogos h2{
+  font-size: 20px;
+}
+.seccionDosLogos img, .seccionDosLogos .p{
+  margin: 1%;
+  width: 48%;
+  font-size: 19px;
+}
+
+.seccionDosLogos i {
+    font-size: 90px;
+    margin: 60px;
+     color: #161619;
+}
+
+
+/* WARNING: SECCIÓN 3 */
+
+
+.secionTres div{
+  width: 30%;
+  height: 450px;
+  border: 1px solid #cec7c7;;
+  margin: 1%;
+}
+
+.secionTres img{
+  width: 100%;
+  height: 200px;
+}
+
+.secionTres p{
+  font-size: 18px;
+  height: 200px;
+  margin: 10px;
+}
+
+.seccionDos div img{
+  height: 85%;
+}
