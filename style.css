@@ -19,7 +19,11 @@ body{
 
 /* WARNING: HOME */
 
-
+.enlaces a {
+    width: 17%;
+    margin: 1%;
+    display: inline-flex;
+}
 h1{
 
   font-family: 'Roboto Slab', serif;
@@ -243,4 +247,7 @@ footer{
 
 .seccionDos div img{
   height: 85%;
+}
+.faq-content {
+    background-color: #eae7e7;
 }

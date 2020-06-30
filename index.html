@@ -4,13 +4,25 @@
     <meta charset="utf-8">
     <title>HOME</title>
     <link rel="stylesheet" href="style.css">
+    <style media="screen">
+    .mostrar{
+      display: none;
+    }
+      .ocultando{
+        display: block;
+      }
+
+
+
+    </style>
   </head>
   <body>
     <header>
       <script src="https://kit.fontawesome.com/777b0b9662.js" crossorigin="anonymous"></script>
       <div class="container">
-        <img src="logo.jpeg" alt="" class="logo flotar">
-        <h1 class="flotar">HONUA</h1>
+
+        <a href="index.html"><img src="logo.jpeg" alt="" class="logo flotar"></a>
+       <a href="index.html"><h1>HONUA</h1></a>
 
       </div>
 
@@ -29,10 +41,28 @@
             <div class="faq-question">
               <input id="q1" type="checkbox" class="panel">
               <div class="plus"><i class="fas fa-poll-h"></i></div>
-              <label for="q1" class="panel-title">Encuesta</label>
+              <label for="q1" class="panel-title" onclick="ocultar()">Click here in order to start the quiz!!!</label>
+              <div id="ocultar" class="mostrar">
+
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeB-nVgVxGpLyfX_sRbs_6LEktC7X-r0RMgO-L5r13vbhZRKQ/viewform?embedded=true" width="640" height="300" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+              <p>In order to follow this web page format, please complete this form. Check your score on the form, and click below on the score that you have gotten, it is going to take you to the correct section. Enjoy it!</p>
+              <div class="enlaces">
+                    <a href="mm-seccion3O.html"> 21 </a>
+                    <a href="mm-seccion3E.html"> 11 </a>
+                    <a href="mm-seccion3L.html"> 31 </a>
+                    <a href="ny-seccion3E.html"> 12 </a>
+                    <a href="ny-seccion3L.html"> 32 </a>
+                    <a href="ny-seccion3O.html"> 22 </a>
+                    <a href="sy-seccion3L.html"> 33 </a>
+                    <a href="sy-seccion3O.html"> 23 </a>
+                    <a href="sy-seccion3OE.html">13 </a>
+                  </div>
+                </div>
               <div class="panel-content">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeB-nVgVxGpLyfX_sRbs_6LEktC7X-r0RMgO-L5r13vbhZRKQ/viewform?usp=sf_link" width="640" height="952" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+
+
               </div>
+
             </div>
         </div>
 
@@ -76,12 +106,25 @@
             <img src="manly.jpg" alt="">
           </a>
         </div>
+
       </div>
 
     </main>
     <footer>
+      <p> About us: I am Martina, and I love traveling. From a Project of my school, I found my passion, make this page, I really enjoyed it and I will continue uploading things! Hope you enjoy it.
+
+      Why Honua? It is a Hawaiian word, and it means World. </p>
       <p>© Lifestyle website created by Honua Team. All rights reserved. - Martina Sanchez Saizar -</p>
       <a href="https://www.instagram.com/ho_nua/" style="color:#fff"> <i class="fab fa-instagram icono"></i></a>
     </footer>
+
+    <script type="text/javascript">
+      var doc = document.getElementById("ocultar")
+      function ocultar() {
+        doc.classList.toggle("ocultando")
+
+      }
+
+    </script>
   </body>
 </html>
